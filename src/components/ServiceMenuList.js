@@ -72,7 +72,7 @@ const ServiceMenuList = ({match}) => {
         <ServiceMenu data={serviceData} />
       </Route>
       <Route exact path={url}>
-        <p>Please select a service.</p>
+        <p>Please select a service..</p>
       </Route>
     </div>
   );
