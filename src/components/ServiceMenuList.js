@@ -3,7 +3,7 @@ import React from 'react';
 import  { Link,Route,useRouteMatch } from  "react-router-dom";
 import ServiceMenu from "./ServiceMenu";
 
-const ServiceMenuList = ({match}) => {
+const ServiceMenuList = ({Match}) => {
   const serviceData = [
     { 
       id: 1,
