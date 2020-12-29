@@ -64,7 +64,7 @@ const ServiceMenuList = ({match}) => {
       <div>
         <div>
           <h3>Services</h3>
-          <ul>{linkList}</ul>
+          <ul>{linkList}{url}</ul>
         </div>
       </div>
 
