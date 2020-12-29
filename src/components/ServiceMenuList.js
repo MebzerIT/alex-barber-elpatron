@@ -64,10 +64,10 @@ const ServiceMenuList = ({match}) => {
       <div>
         <div>
           <h3>Services</h3>
-          <ul>{linkList}{url}</ul>
+          <ul>{linkList}</ul>
         </div>
       </div>
-
+        console.log({url});
       <Route path={`${url}/:ServiceMenu.id`}>
         <ServiceMenu data={serviceData} />
       </Route>
