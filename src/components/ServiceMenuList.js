@@ -3,7 +3,7 @@ import React from 'react';
 import  { Link,Route,useRouteMatch } from  "react-router-dom";
 import ServiceMenu from "./ServiceMenu";
 
-const ServiceMenuList = ({Match}) => {
+const ServiceMenuList = ({match}) => {
   const serviceData = [
     { 
       id: 1,
@@ -68,7 +68,7 @@ const ServiceMenuList = ({Match}) => {
         </div>
       </div>
 
-      <Route path={`${url}/:ServiceMenuId`}>
+      <Route path={`${match.url}/:ServiceMenuId`}>
         <ServiceMenu data={serviceData} />
       </Route>
       <Route exact path={url}>
