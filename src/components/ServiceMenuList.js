@@ -68,7 +68,7 @@ const ServiceMenuList = ({match}) => {
         </div>
       </div>
 
-      <Route path={`${match.url}/:ServiceMenuId`}>
+      <Route path={`${url}/:ServiceMenuId`}>
         <ServiceMenu data={serviceData} />
       </Route>
       <Route exact path={url}>
