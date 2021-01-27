@@ -1,31 +1,29 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
+import './ServiceMenu.css';
 
 const ServiceMenu = ({data}) => {
-
     const {ServiceMenuId} = useParams();
-    const service = data.find(s => s.id  === Number(ServiceMenuId));
-    let serviceData;
-
-    if (service) {
-        serviceData = (
-        <div>
-            <h3> {service.CutType.name} </h3>
-            <p>{service.CutType.duration}</p>
-            <hr />
-            <h4>{service.CutType.price}</h4>
+    
+    const service = data.find(data => data.id  === Number(ServiceMenuId));
+    
+    return (
+      <div className="RespoTable">
+          <table>
+            <tbody>            
+                 <tr>
+                    <th colSpan="3">{service.name}</th>
+                  </tr>  
+                 {service.CutType.map((sub) => (                 
+                  <tr key={sub.id}> 
+                    <td>{sub.name}</td>
+                    <td>{sub.duration}</td>
+                    <td>{sub.price}</td>
+                  </tr>           
+                ))}
+            </tbody>
+          </table> 
         </div>
-
-        );
-    }
-    else {
-        serviceData = <h2> Sorry. Service doesn't exist </h2>;
-      }
-
-      return (
-        <div>
-          <div>{serviceData}</div>
-        </div>
-      );
-};
+    );
+}
 export default ServiceMenu;

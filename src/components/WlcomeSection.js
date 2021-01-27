@@ -25,7 +25,7 @@ function WlcomeSection() {
                         </div>
                 </div>
                 <div className='flex-child two'>
-                    <img src={process.env.PUBLIC_URL + "./images/alpetron.jpg"}
+                    <img src={process.env.PUBLIC_URL + "/images/alpetron.jpg"}
                             width="562px" height="820px"   className="align-center" alt="alex-barber" />
                 </div>
 

@@ -29,7 +29,7 @@ function Navbar() {
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-          <img src={process.env.PUBLIC_URL + "./images/logo_1.jpg"}
+          <img src={process.env.PUBLIC_URL + "/images/logo_1.jpg"}
            width="120px" height="80px"  className="align-center" alt="alex-barber" />
           </Link>
           <div className='menu-icon' onClick={handleClick}>

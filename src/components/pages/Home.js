@@ -3,6 +3,7 @@ import '../../App.css';
 import HeroSection from '../HeroSection';
 import WlcomeSection from '../WlcomeSection';
 import ServiceMenuList from '../ServiceMenuList';
+import ImageSlider from '../ImageSlider';
 
 
 
@@ -13,6 +14,8 @@ function Home() {
         <HeroSection />
         <WlcomeSection/>
         <ServiceMenuList/>
+        <ImageSlider/>
+        
       </>
     );
   }

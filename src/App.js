@@ -7,10 +7,10 @@ import Home from './components/pages/Home';
 function App() {
   return (
     <>
-     <Router>
+     <Router basename='/react'>
        <Navbar />
        <Switch>
-         <Route path='/' exact component={Home}
+         <Route path='/'  component={Home}
          />
        </Switch>
      </Router>
